@@ -1,0 +1,10 @@
+ref: discord
+name: discord
+description: discord Actions for StackStorm
+keywords:
+  - discord
+version: 2.0.3
+author: CubeCurve People
+email: james@stackstorm.com
+python_versions:
+  - "3"
