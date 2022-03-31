@@ -1,4 +1,4 @@
-pack: default
+pack: discord
 enabled: true
 runner_type: orquesta
 parameters:
