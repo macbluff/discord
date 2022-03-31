@@ -1,0 +1,8 @@
+pack: discord
+enabled: true
+runner_type: orquesta
+name: Notifica_da_StackStorm_a_OPA_alerts
+entry_point: workflows/Notifica_da_StackStorm_a_OPA_alerts.yaml
+parameters:
+  content:
+    type: string

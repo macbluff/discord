@@ -1,0 +1,12 @@
+version: 1.0
+tasks:
+  # [506, 95]
+  Send:
+    action: discord.NotificaDiscord
+    input:
+      avatar_url: "https://avatars.githubusercontent.com/u/4969009?s=200&v=4"
+      username: StackStorm
+      webhooks: 954378041675632692/bBXOtP4dyDkqUDdbQvO9KT5uC2oV_jOjyITQ5hVEarBZWg0Paszvcste01zUBgZB3S3g
+      content: <% ctx('content') %>
+input:
+  - content
