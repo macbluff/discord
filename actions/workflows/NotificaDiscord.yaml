@@ -1,0 +1,16 @@
+version: 1.0
+tasks:
+  # [516, 65]
+  NotificaDiscord:
+    action: core.http
+    input:
+      url: "https://discord.com/api/webhooks/<% ctx('webhooks') %>"
+      body: "{{ {'username': ctx('username'), 'avatar_url':ctx('avatar_url'), 'content': ctx('content') } | to_json_string}}"
+      headers:
+        Content-Type: application/json
+      method: POST
+input:
+  - webhooks
+  - username
+  - avatar_url
+  - content

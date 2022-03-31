@@ -1,0 +1,14 @@
+pack: default
+enabled: true
+runner_type: orquesta
+parameters:
+  webhooks:
+    type: string
+  username:
+    type: string
+  avatar_url:
+    type: string
+  content:
+    type: string
+name: NotificaDiscord
+entry_point: workflows/NotificaDiscord.yaml
